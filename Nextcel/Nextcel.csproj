@@ -15,7 +15,7 @@
 		<ApplicationTitle>Nextcel</ApplicationTitle>
 
 		<!-- App Identifier -->
-		<ApplicationId>com.companyname.nextcel</ApplicationId>
+		<ApplicationId>com.dvc.nextcel</ApplicationId>
 		<ApplicationIdGuid>041c9a13-e823-4787-b268-46f38c7b77b5</ApplicationIdGuid>
 
 		<!-- Versions -->
@@ -30,6 +30,9 @@
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
 	</PropertyGroup>
 
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-ios|AnyCPU'">
+	  <CreatePackage>false</CreatePackage>
+	</PropertyGroup>
 	<ItemGroup>
 		<!-- App Icon -->
 		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />

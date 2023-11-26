@@ -31,7 +31,8 @@
 *.out
 *.app
 Nextcel/bin/
+Nextcel/obj/
 
-*.editorconfig
+.DS_Store
 
 .vs/
