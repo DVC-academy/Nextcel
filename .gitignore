@@ -30,4 +30,11 @@
 *.exe
 *.out
 *.app
+
+Nextcel/bin/
+Nextcel/obj/
+
+.DS_Store
+
+
 .vs/*
